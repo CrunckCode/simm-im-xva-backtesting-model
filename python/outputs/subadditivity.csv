@@ -1,0 +1,7 @@
+risk_class,margin_type,n_checks,n_violations,max_excess_usd,data_source
+IR,Delta,60,0,0.0,synthetic (no market data)
+IR,Vega,60,0,0.0,synthetic (no market data)
+IR,Curvature,60,0,0.0,synthetic (no market data)
+FX,Delta,60,0,0.0,synthetic (no market data)
+FX,Vega,60,0,0.0,synthetic (no market data)
+FX,Curvature,60,0,0.0,synthetic (no market data)

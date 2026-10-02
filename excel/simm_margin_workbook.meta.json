@@ -1,0 +1,1867 @@
+{
+ "checks": [
+  {
+   "key": "opt|bachelier_vega_amount",
+   "sheet": "Sensitivities",
+   "cell": "P19"
+  },
+  {
+   "key": "opt|bachelier_price",
+   "sheet": "Sensitivities",
+   "cell": "P21"
+  },
+  {
+   "key": "opt|gk_price",
+   "sheet": "Sensitivities",
+   "cell": "P41"
+  },
+  {
+   "key": "opt|gk_vega_amount",
+   "sheet": "Sensitivities",
+   "cell": "P42"
+  },
+  {
+   "key": "opt|gk_delta_amount",
+   "sheet": "Sensitivities",
+   "cell": "P43"
+  },
+  {
+   "key": "ws|IR|USD|2w",
+   "sheet": "SIMM_Delta",
+   "cell": "D33"
+  },
+  {
+   "key": "ws|IR|USD|1m",
+   "sheet": "SIMM_Delta",
+   "cell": "D34"
+  },
+  {
+   "key": "ws|IR|USD|3m",
+   "sheet": "SIMM_Delta",
+   "cell": "D35"
+  },
+  {
+   "key": "ws|IR|USD|6m",
+   "sheet": "SIMM_Delta",
+   "cell": "D36"
+  },
+  {
+   "key": "ws|IR|USD|1y",
+   "sheet": "SIMM_Delta",
+   "cell": "D37"
+  },
+  {
+   "key": "ws|IR|USD|2y",
+   "sheet": "SIMM_Delta",
+   "cell": "D38"
+  },
+  {
+   "key": "ws|IR|USD|3y",
+   "sheet": "SIMM_Delta",
+   "cell": "D39"
+  },
+  {
+   "key": "ws|IR|USD|5y",
+   "sheet": "SIMM_Delta",
+   "cell": "D40"
+  },
+  {
+   "key": "ws|IR|USD|10y",
+   "sheet": "SIMM_Delta",
+   "cell": "D41"
+  },
+  {
+   "key": "ws|IR|USD|15y",
+   "sheet": "SIMM_Delta",
+   "cell": "D42"
+  },
+  {
+   "key": "ws|IR|USD|20y",
+   "sheet": "SIMM_Delta",
+   "cell": "D43"
+  },
+  {
+   "key": "ws|IR|USD|30y",
+   "sheet": "SIMM_Delta",
+   "cell": "D44"
+  },
+  {
+   "key": "cr|IR|Delta|USD",
+   "sheet": "SIMM_Delta",
+   "cell": "B28"
+  },
+  {
+   "key": "k|IR|Delta|USD",
+   "sheet": "SIMM_Delta",
+   "cell": "B29"
+  },
+  {
+   "key": "s|IR|Delta|USD",
+   "sheet": "SIMM_Delta",
+   "cell": "B31"
+  },
+  {
+   "key": "ws|IR|EUR|2w",
+   "sheet": "SIMM_Delta",
+   "cell": "D58"
+  },
+  {
+   "key": "ws|IR|EUR|1m",
+   "sheet": "SIMM_Delta",
+   "cell": "D59"
+  },
+  {
+   "key": "ws|IR|EUR|3m",
+   "sheet": "SIMM_Delta",
+   "cell": "D60"
+  },
+  {
+   "key": "ws|IR|EUR|6m",
+   "sheet": "SIMM_Delta",
+   "cell": "D61"
+  },
+  {
+   "key": "ws|IR|EUR|1y",
+   "sheet": "SIMM_Delta",
+   "cell": "D62"
+  },
+  {
+   "key": "ws|IR|EUR|2y",
+   "sheet": "SIMM_Delta",
+   "cell": "D63"
+  },
+  {
+   "key": "ws|IR|EUR|3y",
+   "sheet": "SIMM_Delta",
+   "cell": "D64"
+  },
+  {
+   "key": "ws|IR|EUR|5y",
+   "sheet": "SIMM_Delta",
+   "cell": "D65"
+  },
+  {
+   "key": "ws|IR|EUR|10y",
+   "sheet": "SIMM_Delta",
+   "cell": "D66"
+  },
+  {
+   "key": "ws|IR|EUR|15y",
+   "sheet": "SIMM_Delta",
+   "cell": "D67"
+  },
+  {
+   "key": "ws|IR|EUR|20y",
+   "sheet": "SIMM_Delta",
+   "cell": "D68"
+  },
+  {
+   "key": "ws|IR|EUR|30y",
+   "sheet": "SIMM_Delta",
+   "cell": "D69"
+  },
+  {
+   "key": "cr|IR|Delta|EUR",
+   "sheet": "SIMM_Delta",
+   "cell": "B53"
+  },
+  {
+   "key": "k|IR|Delta|EUR",
+   "sheet": "SIMM_Delta",
+   "cell": "B54"
+  },
+  {
+   "key": "s|IR|Delta|EUR",
+   "sheet": "SIMM_Delta",
+   "cell": "B56"
+  },
+  {
+   "key": "ws|IR|GBP|2w",
+   "sheet": "SIMM_Delta",
+   "cell": "D83"
+  },
+  {
+   "key": "ws|IR|GBP|1m",
+   "sheet": "SIMM_Delta",
+   "cell": "D84"
+  },
+  {
+   "key": "ws|IR|GBP|3m",
+   "sheet": "SIMM_Delta",
+   "cell": "D85"
+  },
+  {
+   "key": "ws|IR|GBP|6m",
+   "sheet": "SIMM_Delta",
+   "cell": "D86"
+  },
+  {
+   "key": "ws|IR|GBP|1y",
+   "sheet": "SIMM_Delta",
+   "cell": "D87"
+  },
+  {
+   "key": "ws|IR|GBP|2y",
+   "sheet": "SIMM_Delta",
+   "cell": "D88"
+  },
+  {
+   "key": "ws|IR|GBP|3y",
+   "sheet": "SIMM_Delta",
+   "cell": "D89"
+  },
+  {
+   "key": "ws|IR|GBP|5y",
+   "sheet": "SIMM_Delta",
+   "cell": "D90"
+  },
+  {
+   "key": "ws|IR|GBP|10y",
+   "sheet": "SIMM_Delta",
+   "cell": "D91"
+  },
+  {
+   "key": "ws|IR|GBP|15y",
+   "sheet": "SIMM_Delta",
+   "cell": "D92"
+  },
+  {
+   "key": "ws|IR|GBP|20y",
+   "sheet": "SIMM_Delta",
+   "cell": "D93"
+  },
+  {
+   "key": "ws|IR|GBP|30y",
+   "sheet": "SIMM_Delta",
+   "cell": "D94"
+  },
+  {
+   "key": "cr|IR|Delta|GBP",
+   "sheet": "SIMM_Delta",
+   "cell": "B78"
+  },
+  {
+   "key": "k|IR|Delta|GBP",
+   "sheet": "SIMM_Delta",
+   "cell": "B79"
+  },
+  {
+   "key": "s|IR|Delta|GBP",
+   "sheet": "SIMM_Delta",
+   "cell": "B81"
+  },
+  {
+   "key": "ws|IR|JPY|2w",
+   "sheet": "SIMM_Delta",
+   "cell": "D108"
+  },
+  {
+   "key": "ws|IR|JPY|1m",
+   "sheet": "SIMM_Delta",
+   "cell": "D109"
+  },
+  {
+   "key": "ws|IR|JPY|3m",
+   "sheet": "SIMM_Delta",
+   "cell": "D110"
+  },
+  {
+   "key": "ws|IR|JPY|6m",
+   "sheet": "SIMM_Delta",
+   "cell": "D111"
+  },
+  {
+   "key": "ws|IR|JPY|1y",
+   "sheet": "SIMM_Delta",
+   "cell": "D112"
+  },
+  {
+   "key": "ws|IR|JPY|2y",
+   "sheet": "SIMM_Delta",
+   "cell": "D113"
+  },
+  {
+   "key": "ws|IR|JPY|3y",
+   "sheet": "SIMM_Delta",
+   "cell": "D114"
+  },
+  {
+   "key": "ws|IR|JPY|5y",
+   "sheet": "SIMM_Delta",
+   "cell": "D115"
+  },
+  {
+   "key": "ws|IR|JPY|10y",
+   "sheet": "SIMM_Delta",
+   "cell": "D116"
+  },
+  {
+   "key": "ws|IR|JPY|15y",
+   "sheet": "SIMM_Delta",
+   "cell": "D117"
+  },
+  {
+   "key": "ws|IR|JPY|20y",
+   "sheet": "SIMM_Delta",
+   "cell": "D118"
+  },
+  {
+   "key": "ws|IR|JPY|30y",
+   "sheet": "SIMM_Delta",
+   "cell": "D119"
+  },
+  {
+   "key": "cr|IR|Delta|JPY",
+   "sheet": "SIMM_Delta",
+   "cell": "B103"
+  },
+  {
+   "key": "k|IR|Delta|JPY",
+   "sheet": "SIMM_Delta",
+   "cell": "B104"
+  },
+  {
+   "key": "s|IR|Delta|JPY",
+   "sheet": "SIMM_Delta",
+   "cell": "B106"
+  },
+  {
+   "key": "ws|IR|MXN|2w",
+   "sheet": "SIMM_Delta",
+   "cell": "D133"
+  },
+  {
+   "key": "ws|IR|MXN|1m",
+   "sheet": "SIMM_Delta",
+   "cell": "D134"
+  },
+  {
+   "key": "ws|IR|MXN|3m",
+   "sheet": "SIMM_Delta",
+   "cell": "D135"
+  },
+  {
+   "key": "ws|IR|MXN|6m",
+   "sheet": "SIMM_Delta",
+   "cell": "D136"
+  },
+  {
+   "key": "ws|IR|MXN|1y",
+   "sheet": "SIMM_Delta",
+   "cell": "D137"
+  },
+  {
+   "key": "ws|IR|MXN|2y",
+   "sheet": "SIMM_Delta",
+   "cell": "D138"
+  },
+  {
+   "key": "ws|IR|MXN|3y",
+   "sheet": "SIMM_Delta",
+   "cell": "D139"
+  },
+  {
+   "key": "ws|IR|MXN|5y",
+   "sheet": "SIMM_Delta",
+   "cell": "D140"
+  },
+  {
+   "key": "ws|IR|MXN|10y",
+   "sheet": "SIMM_Delta",
+   "cell": "D141"
+  },
+  {
+   "key": "ws|IR|MXN|15y",
+   "sheet": "SIMM_Delta",
+   "cell": "D142"
+  },
+  {
+   "key": "ws|IR|MXN|20y",
+   "sheet": "SIMM_Delta",
+   "cell": "D143"
+  },
+  {
+   "key": "ws|IR|MXN|30y",
+   "sheet": "SIMM_Delta",
+   "cell": "D144"
+  },
+  {
+   "key": "cr|IR|Delta|MXN",
+   "sheet": "SIMM_Delta",
+   "cell": "B128"
+  },
+  {
+   "key": "k|IR|Delta|MXN",
+   "sheet": "SIMM_Delta",
+   "cell": "B129"
+  },
+  {
+   "key": "s|IR|Delta|MXN",
+   "sheet": "SIMM_Delta",
+   "cell": "B131"
+  },
+  {
+   "key": "margin|IR|Delta",
+   "sheet": "SIMM_Delta",
+   "cell": "B163"
+  },
+  {
+   "key": "ws|FX|EUR",
+   "sheet": "SIMM_Delta",
+   "cell": "H171"
+  },
+  {
+   "key": "cr|FX|Delta|EUR",
+   "sheet": "SIMM_Delta",
+   "cell": "G171"
+  },
+  {
+   "key": "ws|FX|GBP",
+   "sheet": "SIMM_Delta",
+   "cell": "H172"
+  },
+  {
+   "key": "cr|FX|Delta|GBP",
+   "sheet": "SIMM_Delta",
+   "cell": "G172"
+  },
+  {
+   "key": "ws|FX|JPY",
+   "sheet": "SIMM_Delta",
+   "cell": "H173"
+  },
+  {
+   "key": "cr|FX|Delta|JPY",
+   "sheet": "SIMM_Delta",
+   "cell": "G173"
+  },
+  {
+   "key": "ws|FX|MXN",
+   "sheet": "SIMM_Delta",
+   "cell": "H174"
+  },
+  {
+   "key": "cr|FX|Delta|MXN",
+   "sheet": "SIMM_Delta",
+   "cell": "G174"
+  },
+  {
+   "key": "k|FX|Delta",
+   "sheet": "SIMM_Delta",
+   "cell": "B175"
+  },
+  {
+   "key": "margin|FX|Delta",
+   "sheet": "SIMM_Delta",
+   "cell": "B175"
+  },
+  {
+   "key": "vr|IR|USD|2w",
+   "sheet": "SIMM_Vega",
+   "cell": "C17"
+  },
+  {
+   "key": "vr|IR|USD|1m",
+   "sheet": "SIMM_Vega",
+   "cell": "C18"
+  },
+  {
+   "key": "vr|IR|USD|3m",
+   "sheet": "SIMM_Vega",
+   "cell": "C19"
+  },
+  {
+   "key": "vr|IR|USD|6m",
+   "sheet": "SIMM_Vega",
+   "cell": "C20"
+  },
+  {
+   "key": "vr|IR|USD|1y",
+   "sheet": "SIMM_Vega",
+   "cell": "C21"
+  },
+  {
+   "key": "vr|IR|USD|2y",
+   "sheet": "SIMM_Vega",
+   "cell": "C22"
+  },
+  {
+   "key": "vr|IR|USD|3y",
+   "sheet": "SIMM_Vega",
+   "cell": "C23"
+  },
+  {
+   "key": "vr|IR|USD|5y",
+   "sheet": "SIMM_Vega",
+   "cell": "C24"
+  },
+  {
+   "key": "vr|IR|USD|10y",
+   "sheet": "SIMM_Vega",
+   "cell": "C25"
+  },
+  {
+   "key": "vr|IR|USD|15y",
+   "sheet": "SIMM_Vega",
+   "cell": "C26"
+  },
+  {
+   "key": "vr|IR|USD|20y",
+   "sheet": "SIMM_Vega",
+   "cell": "C27"
+  },
+  {
+   "key": "vr|IR|USD|30y",
+   "sheet": "SIMM_Vega",
+   "cell": "C28"
+  },
+  {
+   "key": "cr|IR|Vega|USD",
+   "sheet": "SIMM_Vega",
+   "cell": "B12"
+  },
+  {
+   "key": "k|IR|Vega|USD",
+   "sheet": "SIMM_Vega",
+   "cell": "B13"
+  },
+  {
+   "key": "s|IR|Vega|USD",
+   "sheet": "SIMM_Vega",
+   "cell": "B15"
+  },
+  {
+   "key": "vr|IR|EUR|2w",
+   "sheet": "SIMM_Vega",
+   "cell": "C41"
+  },
+  {
+   "key": "vr|IR|EUR|1m",
+   "sheet": "SIMM_Vega",
+   "cell": "C42"
+  },
+  {
+   "key": "vr|IR|EUR|3m",
+   "sheet": "SIMM_Vega",
+   "cell": "C43"
+  },
+  {
+   "key": "vr|IR|EUR|6m",
+   "sheet": "SIMM_Vega",
+   "cell": "C44"
+  },
+  {
+   "key": "vr|IR|EUR|1y",
+   "sheet": "SIMM_Vega",
+   "cell": "C45"
+  },
+  {
+   "key": "vr|IR|EUR|2y",
+   "sheet": "SIMM_Vega",
+   "cell": "C46"
+  },
+  {
+   "key": "vr|IR|EUR|3y",
+   "sheet": "SIMM_Vega",
+   "cell": "C47"
+  },
+  {
+   "key": "vr|IR|EUR|5y",
+   "sheet": "SIMM_Vega",
+   "cell": "C48"
+  },
+  {
+   "key": "vr|IR|EUR|10y",
+   "sheet": "SIMM_Vega",
+   "cell": "C49"
+  },
+  {
+   "key": "vr|IR|EUR|15y",
+   "sheet": "SIMM_Vega",
+   "cell": "C50"
+  },
+  {
+   "key": "vr|IR|EUR|20y",
+   "sheet": "SIMM_Vega",
+   "cell": "C51"
+  },
+  {
+   "key": "vr|IR|EUR|30y",
+   "sheet": "SIMM_Vega",
+   "cell": "C52"
+  },
+  {
+   "key": "cr|IR|Vega|EUR",
+   "sheet": "SIMM_Vega",
+   "cell": "B36"
+  },
+  {
+   "key": "k|IR|Vega|EUR",
+   "sheet": "SIMM_Vega",
+   "cell": "B37"
+  },
+  {
+   "key": "s|IR|Vega|EUR",
+   "sheet": "SIMM_Vega",
+   "cell": "B39"
+  },
+  {
+   "key": "vr|IR|GBP|2w",
+   "sheet": "SIMM_Vega",
+   "cell": "C65"
+  },
+  {
+   "key": "vr|IR|GBP|1m",
+   "sheet": "SIMM_Vega",
+   "cell": "C66"
+  },
+  {
+   "key": "vr|IR|GBP|3m",
+   "sheet": "SIMM_Vega",
+   "cell": "C67"
+  },
+  {
+   "key": "vr|IR|GBP|6m",
+   "sheet": "SIMM_Vega",
+   "cell": "C68"
+  },
+  {
+   "key": "vr|IR|GBP|1y",
+   "sheet": "SIMM_Vega",
+   "cell": "C69"
+  },
+  {
+   "key": "vr|IR|GBP|2y",
+   "sheet": "SIMM_Vega",
+   "cell": "C70"
+  },
+  {
+   "key": "vr|IR|GBP|3y",
+   "sheet": "SIMM_Vega",
+   "cell": "C71"
+  },
+  {
+   "key": "vr|IR|GBP|5y",
+   "sheet": "SIMM_Vega",
+   "cell": "C72"
+  },
+  {
+   "key": "vr|IR|GBP|10y",
+   "sheet": "SIMM_Vega",
+   "cell": "C73"
+  },
+  {
+   "key": "vr|IR|GBP|15y",
+   "sheet": "SIMM_Vega",
+   "cell": "C74"
+  },
+  {
+   "key": "vr|IR|GBP|20y",
+   "sheet": "SIMM_Vega",
+   "cell": "C75"
+  },
+  {
+   "key": "vr|IR|GBP|30y",
+   "sheet": "SIMM_Vega",
+   "cell": "C76"
+  },
+  {
+   "key": "cr|IR|Vega|GBP",
+   "sheet": "SIMM_Vega",
+   "cell": "B60"
+  },
+  {
+   "key": "k|IR|Vega|GBP",
+   "sheet": "SIMM_Vega",
+   "cell": "B61"
+  },
+  {
+   "key": "s|IR|Vega|GBP",
+   "sheet": "SIMM_Vega",
+   "cell": "B63"
+  },
+  {
+   "key": "vr|IR|JPY|2w",
+   "sheet": "SIMM_Vega",
+   "cell": "C89"
+  },
+  {
+   "key": "vr|IR|JPY|1m",
+   "sheet": "SIMM_Vega",
+   "cell": "C90"
+  },
+  {
+   "key": "vr|IR|JPY|3m",
+   "sheet": "SIMM_Vega",
+   "cell": "C91"
+  },
+  {
+   "key": "vr|IR|JPY|6m",
+   "sheet": "SIMM_Vega",
+   "cell": "C92"
+  },
+  {
+   "key": "vr|IR|JPY|1y",
+   "sheet": "SIMM_Vega",
+   "cell": "C93"
+  },
+  {
+   "key": "vr|IR|JPY|2y",
+   "sheet": "SIMM_Vega",
+   "cell": "C94"
+  },
+  {
+   "key": "vr|IR|JPY|3y",
+   "sheet": "SIMM_Vega",
+   "cell": "C95"
+  },
+  {
+   "key": "vr|IR|JPY|5y",
+   "sheet": "SIMM_Vega",
+   "cell": "C96"
+  },
+  {
+   "key": "vr|IR|JPY|10y",
+   "sheet": "SIMM_Vega",
+   "cell": "C97"
+  },
+  {
+   "key": "vr|IR|JPY|15y",
+   "sheet": "SIMM_Vega",
+   "cell": "C98"
+  },
+  {
+   "key": "vr|IR|JPY|20y",
+   "sheet": "SIMM_Vega",
+   "cell": "C99"
+  },
+  {
+   "key": "vr|IR|JPY|30y",
+   "sheet": "SIMM_Vega",
+   "cell": "C100"
+  },
+  {
+   "key": "cr|IR|Vega|JPY",
+   "sheet": "SIMM_Vega",
+   "cell": "B84"
+  },
+  {
+   "key": "k|IR|Vega|JPY",
+   "sheet": "SIMM_Vega",
+   "cell": "B85"
+  },
+  {
+   "key": "s|IR|Vega|JPY",
+   "sheet": "SIMM_Vega",
+   "cell": "B87"
+  },
+  {
+   "key": "vr|IR|MXN|2w",
+   "sheet": "SIMM_Vega",
+   "cell": "C113"
+  },
+  {
+   "key": "vr|IR|MXN|1m",
+   "sheet": "SIMM_Vega",
+   "cell": "C114"
+  },
+  {
+   "key": "vr|IR|MXN|3m",
+   "sheet": "SIMM_Vega",
+   "cell": "C115"
+  },
+  {
+   "key": "vr|IR|MXN|6m",
+   "sheet": "SIMM_Vega",
+   "cell": "C116"
+  },
+  {
+   "key": "vr|IR|MXN|1y",
+   "sheet": "SIMM_Vega",
+   "cell": "C117"
+  },
+  {
+   "key": "vr|IR|MXN|2y",
+   "sheet": "SIMM_Vega",
+   "cell": "C118"
+  },
+  {
+   "key": "vr|IR|MXN|3y",
+   "sheet": "SIMM_Vega",
+   "cell": "C119"
+  },
+  {
+   "key": "vr|IR|MXN|5y",
+   "sheet": "SIMM_Vega",
+   "cell": "C120"
+  },
+  {
+   "key": "vr|IR|MXN|10y",
+   "sheet": "SIMM_Vega",
+   "cell": "C121"
+  },
+  {
+   "key": "vr|IR|MXN|15y",
+   "sheet": "SIMM_Vega",
+   "cell": "C122"
+  },
+  {
+   "key": "vr|IR|MXN|20y",
+   "sheet": "SIMM_Vega",
+   "cell": "C123"
+  },
+  {
+   "key": "vr|IR|MXN|30y",
+   "sheet": "SIMM_Vega",
+   "cell": "C124"
+  },
+  {
+   "key": "cr|IR|Vega|MXN",
+   "sheet": "SIMM_Vega",
+   "cell": "B108"
+  },
+  {
+   "key": "k|IR|Vega|MXN",
+   "sheet": "SIMM_Vega",
+   "cell": "B109"
+  },
+  {
+   "key": "s|IR|Vega|MXN",
+   "sheet": "SIMM_Vega",
+   "cell": "B111"
+  },
+  {
+   "key": "margin|IR|Vega",
+   "sheet": "SIMM_Vega",
+   "cell": "B140"
+  },
+  {
+   "key": "sigma|EURUSD",
+   "sheet": "SIMM_Vega",
+   "cell": "G152"
+  },
+  {
+   "key": "vr|FX|EURUSD",
+   "sheet": "SIMM_Vega",
+   "cell": "O152"
+  },
+  {
+   "key": "sigma|GBPUSD",
+   "sheet": "SIMM_Vega",
+   "cell": "G153"
+  },
+  {
+   "key": "vr|FX|GBPUSD",
+   "sheet": "SIMM_Vega",
+   "cell": "O153"
+  },
+  {
+   "key": "sigma|USDJPY",
+   "sheet": "SIMM_Vega",
+   "cell": "G154"
+  },
+  {
+   "key": "vr|FX|USDJPY",
+   "sheet": "SIMM_Vega",
+   "cell": "O154"
+  },
+  {
+   "key": "sigma|USDMXN",
+   "sheet": "SIMM_Vega",
+   "cell": "G155"
+  },
+  {
+   "key": "vr|FX|USDMXN",
+   "sheet": "SIMM_Vega",
+   "cell": "O155"
+  },
+  {
+   "key": "k|FX|Vega",
+   "sheet": "SIMM_Vega",
+   "cell": "B156"
+  },
+  {
+   "key": "margin|FX|Vega",
+   "sheet": "SIMM_Vega",
+   "cell": "B156"
+  },
+  {
+   "key": "sf|2w",
+   "sheet": "SIMM_Curvature",
+   "cell": "D15"
+  },
+  {
+   "key": "sf|1m",
+   "sheet": "SIMM_Curvature",
+   "cell": "D16"
+  },
+  {
+   "key": "sf|3m",
+   "sheet": "SIMM_Curvature",
+   "cell": "D17"
+  },
+  {
+   "key": "sf|6m",
+   "sheet": "SIMM_Curvature",
+   "cell": "D18"
+  },
+  {
+   "key": "sf|1y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D19"
+  },
+  {
+   "key": "sf|2y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D20"
+  },
+  {
+   "key": "sf|3y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D21"
+  },
+  {
+   "key": "sf|5y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D22"
+  },
+  {
+   "key": "sf|10y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D23"
+  },
+  {
+   "key": "sf|15y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D24"
+  },
+  {
+   "key": "sf|20y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D25"
+  },
+  {
+   "key": "sf|30y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D26"
+  },
+  {
+   "key": "c|IR|USD|2w",
+   "sheet": "SIMM_Curvature",
+   "cell": "B30"
+  },
+  {
+   "key": "c|IR|EUR|2w",
+   "sheet": "SIMM_Curvature",
+   "cell": "C30"
+  },
+  {
+   "key": "c|IR|GBP|2w",
+   "sheet": "SIMM_Curvature",
+   "cell": "D30"
+  },
+  {
+   "key": "c|IR|JPY|2w",
+   "sheet": "SIMM_Curvature",
+   "cell": "E30"
+  },
+  {
+   "key": "c|IR|MXN|2w",
+   "sheet": "SIMM_Curvature",
+   "cell": "F30"
+  },
+  {
+   "key": "c|IR|USD|1m",
+   "sheet": "SIMM_Curvature",
+   "cell": "B31"
+  },
+  {
+   "key": "c|IR|EUR|1m",
+   "sheet": "SIMM_Curvature",
+   "cell": "C31"
+  },
+  {
+   "key": "c|IR|GBP|1m",
+   "sheet": "SIMM_Curvature",
+   "cell": "D31"
+  },
+  {
+   "key": "c|IR|JPY|1m",
+   "sheet": "SIMM_Curvature",
+   "cell": "E31"
+  },
+  {
+   "key": "c|IR|MXN|1m",
+   "sheet": "SIMM_Curvature",
+   "cell": "F31"
+  },
+  {
+   "key": "c|IR|USD|3m",
+   "sheet": "SIMM_Curvature",
+   "cell": "B32"
+  },
+  {
+   "key": "c|IR|EUR|3m",
+   "sheet": "SIMM_Curvature",
+   "cell": "C32"
+  },
+  {
+   "key": "c|IR|GBP|3m",
+   "sheet": "SIMM_Curvature",
+   "cell": "D32"
+  },
+  {
+   "key": "c|IR|JPY|3m",
+   "sheet": "SIMM_Curvature",
+   "cell": "E32"
+  },
+  {
+   "key": "c|IR|MXN|3m",
+   "sheet": "SIMM_Curvature",
+   "cell": "F32"
+  },
+  {
+   "key": "c|IR|USD|6m",
+   "sheet": "SIMM_Curvature",
+   "cell": "B33"
+  },
+  {
+   "key": "c|IR|EUR|6m",
+   "sheet": "SIMM_Curvature",
+   "cell": "C33"
+  },
+  {
+   "key": "c|IR|GBP|6m",
+   "sheet": "SIMM_Curvature",
+   "cell": "D33"
+  },
+  {
+   "key": "c|IR|JPY|6m",
+   "sheet": "SIMM_Curvature",
+   "cell": "E33"
+  },
+  {
+   "key": "c|IR|MXN|6m",
+   "sheet": "SIMM_Curvature",
+   "cell": "F33"
+  },
+  {
+   "key": "c|IR|USD|1y",
+   "sheet": "SIMM_Curvature",
+   "cell": "B34"
+  },
+  {
+   "key": "c|IR|EUR|1y",
+   "sheet": "SIMM_Curvature",
+   "cell": "C34"
+  },
+  {
+   "key": "c|IR|GBP|1y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D34"
+  },
+  {
+   "key": "c|IR|JPY|1y",
+   "sheet": "SIMM_Curvature",
+   "cell": "E34"
+  },
+  {
+   "key": "c|IR|MXN|1y",
+   "sheet": "SIMM_Curvature",
+   "cell": "F34"
+  },
+  {
+   "key": "c|IR|USD|2y",
+   "sheet": "SIMM_Curvature",
+   "cell": "B35"
+  },
+  {
+   "key": "c|IR|EUR|2y",
+   "sheet": "SIMM_Curvature",
+   "cell": "C35"
+  },
+  {
+   "key": "c|IR|GBP|2y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D35"
+  },
+  {
+   "key": "c|IR|JPY|2y",
+   "sheet": "SIMM_Curvature",
+   "cell": "E35"
+  },
+  {
+   "key": "c|IR|MXN|2y",
+   "sheet": "SIMM_Curvature",
+   "cell": "F35"
+  },
+  {
+   "key": "c|IR|USD|3y",
+   "sheet": "SIMM_Curvature",
+   "cell": "B36"
+  },
+  {
+   "key": "c|IR|EUR|3y",
+   "sheet": "SIMM_Curvature",
+   "cell": "C36"
+  },
+  {
+   "key": "c|IR|GBP|3y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D36"
+  },
+  {
+   "key": "c|IR|JPY|3y",
+   "sheet": "SIMM_Curvature",
+   "cell": "E36"
+  },
+  {
+   "key": "c|IR|MXN|3y",
+   "sheet": "SIMM_Curvature",
+   "cell": "F36"
+  },
+  {
+   "key": "c|IR|USD|5y",
+   "sheet": "SIMM_Curvature",
+   "cell": "B37"
+  },
+  {
+   "key": "c|IR|EUR|5y",
+   "sheet": "SIMM_Curvature",
+   "cell": "C37"
+  },
+  {
+   "key": "c|IR|GBP|5y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D37"
+  },
+  {
+   "key": "c|IR|JPY|5y",
+   "sheet": "SIMM_Curvature",
+   "cell": "E37"
+  },
+  {
+   "key": "c|IR|MXN|5y",
+   "sheet": "SIMM_Curvature",
+   "cell": "F37"
+  },
+  {
+   "key": "c|IR|USD|10y",
+   "sheet": "SIMM_Curvature",
+   "cell": "B38"
+  },
+  {
+   "key": "c|IR|EUR|10y",
+   "sheet": "SIMM_Curvature",
+   "cell": "C38"
+  },
+  {
+   "key": "c|IR|GBP|10y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D38"
+  },
+  {
+   "key": "c|IR|JPY|10y",
+   "sheet": "SIMM_Curvature",
+   "cell": "E38"
+  },
+  {
+   "key": "c|IR|MXN|10y",
+   "sheet": "SIMM_Curvature",
+   "cell": "F38"
+  },
+  {
+   "key": "c|IR|USD|15y",
+   "sheet": "SIMM_Curvature",
+   "cell": "B39"
+  },
+  {
+   "key": "c|IR|EUR|15y",
+   "sheet": "SIMM_Curvature",
+   "cell": "C39"
+  },
+  {
+   "key": "c|IR|GBP|15y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D39"
+  },
+  {
+   "key": "c|IR|JPY|15y",
+   "sheet": "SIMM_Curvature",
+   "cell": "E39"
+  },
+  {
+   "key": "c|IR|MXN|15y",
+   "sheet": "SIMM_Curvature",
+   "cell": "F39"
+  },
+  {
+   "key": "c|IR|USD|20y",
+   "sheet": "SIMM_Curvature",
+   "cell": "B40"
+  },
+  {
+   "key": "c|IR|EUR|20y",
+   "sheet": "SIMM_Curvature",
+   "cell": "C40"
+  },
+  {
+   "key": "c|IR|GBP|20y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D40"
+  },
+  {
+   "key": "c|IR|JPY|20y",
+   "sheet": "SIMM_Curvature",
+   "cell": "E40"
+  },
+  {
+   "key": "c|IR|MXN|20y",
+   "sheet": "SIMM_Curvature",
+   "cell": "F40"
+  },
+  {
+   "key": "c|IR|USD|30y",
+   "sheet": "SIMM_Curvature",
+   "cell": "B41"
+  },
+  {
+   "key": "c|IR|EUR|30y",
+   "sheet": "SIMM_Curvature",
+   "cell": "C41"
+  },
+  {
+   "key": "c|IR|GBP|30y",
+   "sheet": "SIMM_Curvature",
+   "cell": "D41"
+  },
+  {
+   "key": "c|IR|JPY|30y",
+   "sheet": "SIMM_Curvature",
+   "cell": "E41"
+  },
+  {
+   "key": "c|IR|MXN|30y",
+   "sheet": "SIMM_Curvature",
+   "cell": "F41"
+  },
+  {
+   "key": "theta|IR",
+   "sheet": "SIMM_Curvature",
+   "cell": "B44"
+  },
+  {
+   "key": "lambda|IR",
+   "sheet": "SIMM_Curvature",
+   "cell": "B45"
+  },
+  {
+   "key": "k|IR|Curvature|USD",
+   "sheet": "SIMM_Curvature",
+   "cell": "B50"
+  },
+  {
+   "key": "s|IR|Curvature|USD",
+   "sheet": "SIMM_Curvature",
+   "cell": "B51"
+  },
+  {
+   "key": "k|IR|Curvature|EUR",
+   "sheet": "SIMM_Curvature",
+   "cell": "B66"
+  },
+  {
+   "key": "s|IR|Curvature|EUR",
+   "sheet": "SIMM_Curvature",
+   "cell": "B67"
+  },
+  {
+   "key": "k|IR|Curvature|GBP",
+   "sheet": "SIMM_Curvature",
+   "cell": "B82"
+  },
+  {
+   "key": "s|IR|Curvature|GBP",
+   "sheet": "SIMM_Curvature",
+   "cell": "B83"
+  },
+  {
+   "key": "k|IR|Curvature|JPY",
+   "sheet": "SIMM_Curvature",
+   "cell": "B98"
+  },
+  {
+   "key": "s|IR|Curvature|JPY",
+   "sheet": "SIMM_Curvature",
+   "cell": "B99"
+  },
+  {
+   "key": "k|IR|Curvature|MXN",
+   "sheet": "SIMM_Curvature",
+   "cell": "B114"
+  },
+  {
+   "key": "s|IR|Curvature|MXN",
+   "sheet": "SIMM_Curvature",
+   "cell": "B115"
+  },
+  {
+   "key": "margin|IR|Curvature",
+   "sheet": "SIMM_Curvature",
+   "cell": "B139"
+  },
+  {
+   "key": "c|FX|EURUSD",
+   "sheet": "SIMM_Curvature",
+   "cell": "B145"
+  },
+  {
+   "key": "c|FX|GBPUSD",
+   "sheet": "SIMM_Curvature",
+   "cell": "B146"
+  },
+  {
+   "key": "c|FX|USDJPY",
+   "sheet": "SIMM_Curvature",
+   "cell": "B147"
+  },
+  {
+   "key": "c|FX|USDMXN",
+   "sheet": "SIMM_Curvature",
+   "cell": "B148"
+  },
+  {
+   "key": "theta|FX",
+   "sheet": "SIMM_Curvature",
+   "cell": "B151"
+  },
+  {
+   "key": "lambda|FX",
+   "sheet": "SIMM_Curvature",
+   "cell": "B152"
+  },
+  {
+   "key": "k|FX|Curvature",
+   "sheet": "SIMM_Curvature",
+   "cell": "B153"
+  },
+  {
+   "key": "margin|FX|Curvature",
+   "sheet": "SIMM_Curvature",
+   "cell": "B154"
+  },
+  {
+   "key": "im|IR",
+   "sheet": "SIMM_Total",
+   "cell": "B7"
+  },
+  {
+   "key": "im|FX",
+   "sheet": "SIMM_Total",
+   "cell": "C7"
+  },
+  {
+   "key": "total",
+   "sheet": "SIMM_Total",
+   "cell": "B10"
+  },
+  {
+   "key": "sched|rate|IRS_USD_2Y",
+   "sheet": "Schedule_IM",
+   "cell": "F7"
+  },
+  {
+   "key": "sched|gross_im|IRS_USD_2Y",
+   "sheet": "Schedule_IM",
+   "cell": "G7"
+  },
+  {
+   "key": "sched|rate|IRS_USD_5Y",
+   "sheet": "Schedule_IM",
+   "cell": "F8"
+  },
+  {
+   "key": "sched|gross_im|IRS_USD_5Y",
+   "sheet": "Schedule_IM",
+   "cell": "G8"
+  },
+  {
+   "key": "sched|rate|IRS_USD_10Y",
+   "sheet": "Schedule_IM",
+   "cell": "F9"
+  },
+  {
+   "key": "sched|gross_im|IRS_USD_10Y",
+   "sheet": "Schedule_IM",
+   "cell": "G9"
+  },
+  {
+   "key": "sched|rate|IRS_USD_30Y",
+   "sheet": "Schedule_IM",
+   "cell": "F10"
+  },
+  {
+   "key": "sched|gross_im|IRS_USD_30Y",
+   "sheet": "Schedule_IM",
+   "cell": "G10"
+  },
+  {
+   "key": "sched|rate|IRS_EUR_5Y",
+   "sheet": "Schedule_IM",
+   "cell": "F11"
+  },
+  {
+   "key": "sched|gross_im|IRS_EUR_5Y",
+   "sheet": "Schedule_IM",
+   "cell": "G11"
+  },
+  {
+   "key": "sched|rate|IRS_EUR_10Y",
+   "sheet": "Schedule_IM",
+   "cell": "F12"
+  },
+  {
+   "key": "sched|gross_im|IRS_EUR_10Y",
+   "sheet": "Schedule_IM",
+   "cell": "G12"
+  },
+  {
+   "key": "sched|rate|IRS_GBP_7Y",
+   "sheet": "Schedule_IM",
+   "cell": "F13"
+  },
+  {
+   "key": "sched|gross_im|IRS_GBP_7Y",
+   "sheet": "Schedule_IM",
+   "cell": "G13"
+  },
+  {
+   "key": "sched|rate|IRS_JPY_10Y",
+   "sheet": "Schedule_IM",
+   "cell": "F14"
+  },
+  {
+   "key": "sched|gross_im|IRS_JPY_10Y",
+   "sheet": "Schedule_IM",
+   "cell": "G14"
+  },
+  {
+   "key": "sched|rate|IRS_MXN_3Y",
+   "sheet": "Schedule_IM",
+   "cell": "F15"
+  },
+  {
+   "key": "sched|gross_im|IRS_MXN_3Y",
+   "sheet": "Schedule_IM",
+   "cell": "G15"
+  },
+  {
+   "key": "sched|rate|SWPT_USD_1Yx5Y",
+   "sheet": "Schedule_IM",
+   "cell": "F16"
+  },
+  {
+   "key": "sched|gross_im|SWPT_USD_1Yx5Y",
+   "sheet": "Schedule_IM",
+   "cell": "G16"
+  },
+  {
+   "key": "sched|rate|SWPT_EUR_4Yx10Y",
+   "sheet": "Schedule_IM",
+   "cell": "F17"
+  },
+  {
+   "key": "sched|gross_im|SWPT_EUR_4Yx10Y",
+   "sheet": "Schedule_IM",
+   "cell": "G17"
+  },
+  {
+   "key": "sched|rate|SWPT_GBP_5Yx5Y",
+   "sheet": "Schedule_IM",
+   "cell": "F18"
+  },
+  {
+   "key": "sched|gross_im|SWPT_GBP_5Yx5Y",
+   "sheet": "Schedule_IM",
+   "cell": "G18"
+  },
+  {
+   "key": "sched|rate|FXF_EURUSD_6M",
+   "sheet": "Schedule_IM",
+   "cell": "F19"
+  },
+  {
+   "key": "sched|gross_im|FXF_EURUSD_6M",
+   "sheet": "Schedule_IM",
+   "cell": "G19"
+  },
+  {
+   "key": "sched|rate|FXF_GBPUSD_1Y",
+   "sheet": "Schedule_IM",
+   "cell": "F20"
+  },
+  {
+   "key": "sched|gross_im|FXF_GBPUSD_1Y",
+   "sheet": "Schedule_IM",
+   "cell": "G20"
+  },
+  {
+   "key": "sched|rate|FXF_USDJPY_3M",
+   "sheet": "Schedule_IM",
+   "cell": "F21"
+  },
+  {
+   "key": "sched|gross_im|FXF_USDJPY_3M",
+   "sheet": "Schedule_IM",
+   "cell": "G21"
+  },
+  {
+   "key": "sched|rate|FXF_USDMXN_6M",
+   "sheet": "Schedule_IM",
+   "cell": "F22"
+  },
+  {
+   "key": "sched|gross_im|FXF_USDMXN_6M",
+   "sheet": "Schedule_IM",
+   "cell": "G22"
+  },
+  {
+   "key": "sched|rate|FXO_EURUSD_C3M",
+   "sheet": "Schedule_IM",
+   "cell": "F23"
+  },
+  {
+   "key": "sched|gross_im|FXO_EURUSD_C3M",
+   "sheet": "Schedule_IM",
+   "cell": "G23"
+  },
+  {
+   "key": "sched|rate|FXO_USDMXN_C1Y",
+   "sheet": "Schedule_IM",
+   "cell": "F24"
+  },
+  {
+   "key": "sched|gross_im|FXO_USDMXN_C1Y",
+   "sheet": "Schedule_IM",
+   "cell": "G24"
+  },
+  {
+   "key": "sched|rate|FXO_GBPUSD_STRADDLE_C",
+   "sheet": "Schedule_IM",
+   "cell": "F25"
+  },
+  {
+   "key": "sched|gross_im|FXO_GBPUSD_STRADDLE_C",
+   "sheet": "Schedule_IM",
+   "cell": "G25"
+  },
+  {
+   "key": "sched|rate|FXO_GBPUSD_STRADDLE_P",
+   "sheet": "Schedule_IM",
+   "cell": "F26"
+  },
+  {
+   "key": "sched|gross_im|FXO_GBPUSD_STRADDLE_P",
+   "sheet": "Schedule_IM",
+   "cell": "G26"
+  },
+  {
+   "key": "sched|gross",
+   "sheet": "Schedule_IM",
+   "cell": "B28"
+  },
+  {
+   "key": "sched|ngr",
+   "sheet": "Schedule_IM",
+   "cell": "B31"
+  },
+  {
+   "key": "sched|net",
+   "sheet": "Schedule_IM",
+   "cell": "B34"
+  },
+  {
+   "key": "bt|1d|n",
+   "sheet": "Backtest",
+   "cell": "L5"
+  },
+  {
+   "key": "bt|1d|x",
+   "sheet": "Backtest",
+   "cell": "L6"
+  },
+  {
+   "key": "bt|1d|LR_uc",
+   "sheet": "Backtest",
+   "cell": "L11"
+  },
+  {
+   "key": "bt|1d|p_uc",
+   "sheet": "Backtest",
+   "cell": "L12"
+  },
+  {
+   "key": "bt|1d|n00",
+   "sheet": "Backtest",
+   "cell": "L13"
+  },
+  {
+   "key": "bt|1d|n01",
+   "sheet": "Backtest",
+   "cell": "L14"
+  },
+  {
+   "key": "bt|1d|n10",
+   "sheet": "Backtest",
+   "cell": "L15"
+  },
+  {
+   "key": "bt|1d|n11",
+   "sheet": "Backtest",
+   "cell": "L16"
+  },
+  {
+   "key": "bt|1d|LR_ind",
+   "sheet": "Backtest",
+   "cell": "L22"
+  },
+  {
+   "key": "bt|1d|p_ind",
+   "sheet": "Backtest",
+   "cell": "L23"
+  },
+  {
+   "key": "bt|1d|LR_cc",
+   "sheet": "Backtest",
+   "cell": "L24"
+  },
+  {
+   "key": "bt|1d|p_cc",
+   "sheet": "Backtest",
+   "cell": "L25"
+  },
+  {
+   "key": "bt|1d|zone",
+   "sheet": "Backtest",
+   "cell": "L28"
+  },
+  {
+   "key": "bt|10d|n",
+   "sheet": "Backtest",
+   "cell": "M5"
+  },
+  {
+   "key": "bt|10d|x",
+   "sheet": "Backtest",
+   "cell": "M6"
+  },
+  {
+   "key": "bt|10d|LR_uc",
+   "sheet": "Backtest",
+   "cell": "M11"
+  },
+  {
+   "key": "bt|10d|p_uc",
+   "sheet": "Backtest",
+   "cell": "M12"
+  },
+  {
+   "key": "bt|10d|n00",
+   "sheet": "Backtest",
+   "cell": "M13"
+  },
+  {
+   "key": "bt|10d|n01",
+   "sheet": "Backtest",
+   "cell": "M14"
+  },
+  {
+   "key": "bt|10d|n10",
+   "sheet": "Backtest",
+   "cell": "M15"
+  },
+  {
+   "key": "bt|10d|n11",
+   "sheet": "Backtest",
+   "cell": "M16"
+  },
+  {
+   "key": "bt|10d|LR_ind",
+   "sheet": "Backtest",
+   "cell": "M22"
+  },
+  {
+   "key": "bt|10d|p_ind",
+   "sheet": "Backtest",
+   "cell": "M23"
+  },
+  {
+   "key": "bt|10d|LR_cc",
+   "sheet": "Backtest",
+   "cell": "M24"
+  },
+  {
+   "key": "bt|10d|p_cc",
+   "sheet": "Backtest",
+   "cell": "M25"
+  },
+  {
+   "key": "bt|10d|zone",
+   "sheet": "Backtest",
+   "cell": "M28"
+  },
+  {
+   "key": "bt|1d|x250",
+   "sheet": "Backtest",
+   "cell": "L29"
+  },
+  {
+   "key": "bt|1d|zone250",
+   "sheet": "Backtest",
+   "cell": "L30"
+  },
+  {
+   "key": "attr|shapley|matured_trades",
+   "sheet": "Attribution",
+   "cell": "B25"
+  },
+  {
+   "key": "attr|oaat|matured_trades",
+   "sheet": "Attribution",
+   "cell": "D25"
+  },
+  {
+   "key": "attr|bridge|matured_trades",
+   "sheet": "Attribution",
+   "cell": "E25"
+  },
+  {
+   "key": "attr|shapley|new_trades",
+   "sheet": "Attribution",
+   "cell": "B26"
+  },
+  {
+   "key": "attr|oaat|new_trades",
+   "sheet": "Attribution",
+   "cell": "D26"
+  },
+  {
+   "key": "attr|bridge|new_trades",
+   "sheet": "Attribution",
+   "cell": "E26"
+  },
+  {
+   "key": "attr|shapley|market_move",
+   "sheet": "Attribution",
+   "cell": "B27"
+  },
+  {
+   "key": "attr|oaat|market_move",
+   "sheet": "Attribution",
+   "cell": "D27"
+  },
+  {
+   "key": "attr|bridge|market_move",
+   "sheet": "Attribution",
+   "cell": "E27"
+  },
+  {
+   "key": "attr|shapley|parameter_version",
+   "sheet": "Attribution",
+   "cell": "B28"
+  },
+  {
+   "key": "attr|oaat|parameter_version",
+   "sheet": "Attribution",
+   "cell": "D28"
+  },
+  {
+   "key": "attr|bridge|parameter_version",
+   "sheet": "Attribution",
+   "cell": "E28"
+  },
+  {
+   "key": "attr|dim",
+   "sheet": "Attribution",
+   "cell": "B30"
+  },
+  {
+   "key": "attr|shapley_sum",
+   "sheet": "Attribution",
+   "cell": "B29"
+  },
+  {
+   "key": "attr|oaat_residual",
+   "sheet": "Attribution",
+   "cell": "D31"
+  },
+  {
+   "key": "attr|substeps_sum",
+   "sheet": "Attribution",
+   "cell": "B38"
+  }
+ ],
+ "allpass_cell": "B3",
+ "checks_first": 6,
+ "checks_last": 365,
+ "pass_col": "F",
+ "n_formulas": 8996,
+ "sheets": [
+  "README",
+  "Inputs",
+  "Parameters",
+  "Parameters_Reg",
+  "Portfolio",
+  "Sensitivities",
+  "SIMM_Delta",
+  "SIMM_Vega",
+  "SIMM_Curvature",
+  "SIMM_Total",
+  "Schedule_IM",
+  "Backtest",
+  "Attribution",
+  "Checks",
+  "Conclusions",
+  "Python_Ref"
+ ],
+ "calc_sheets": [
+  "SIMM_Delta",
+  "SIMM_Vega",
+  "SIMM_Curvature",
+  "SIMM_Total",
+  "Schedule_IM",
+  "Checks"
+ ],
+ "typed": {
+  "Parameters": [
+   "B5:S689"
+  ],
+  "Parameters_Reg": [
+   "A5:H17",
+   "J5:N6",
+   "P5:S15"
+  ],
+  "Portfolio": [
+   "A5:M24"
+  ],
+  "Sensitivities": [
+   "A5:J100",
+   "P5:P13",
+   "P27:P37"
+  ],
+  "Backtest": [
+   "A5:C1331",
+   "F5:H136"
+  ],
+  "Attribution": [
+   "A5:E20",
+   "B35:B37"
+  ],
+  "Python_Ref": [
+   "A6:E365"
+  ]
+ },
+ "case": "base",
+ "n_checks": 360,
+ "data_source": "synthetic (no market data)"
+}

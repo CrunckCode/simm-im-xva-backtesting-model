@@ -1,0 +1,27 @@
+{
+ "swaption": {
+  "trade_id": "SWPT_USD_1Yx5Y",
+  "notional": 50000000.0,
+  "direction": 1.0,
+  "forward": 0.04690347705241428,
+  "annuity": 4.193464561900879,
+  "strike": 0.04287884320961604,
+  "sigma_bp": 85.3323178505987,
+  "expiry": 1.0,
+  "fx_to_usd": 1.0,
+  "payer": 1.0
+ },
+ "fxoption": {
+  "trade_id": "FXO_GBPUSD_STRADDLE_C",
+  "notional": 15000000.0,
+  "direction": 1.0,
+  "forward": 1.2819656615941184,
+  "strike": 1.2704373075508246,
+  "sigma": 0.13405934680775344,
+  "expiry": 0.5,
+  "df_quote": 0.9793848424111737,
+  "df_base": 0.9811973795524727,
+  "spot_base": 1.2795975240267627,
+  "fx_quote_to_usd": 1.0
+ }
+}

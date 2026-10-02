@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+python/outputs/models/
+*.pdf
+scratch/
+Project_Notes.md
+~$*.xlsx
+WORKLOG_*.md

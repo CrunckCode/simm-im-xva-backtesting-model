@@ -1,0 +1,131 @@
+{
+ "data_source": "synthetic (no market data)",
+ "all_passed": true,
+ "quick": false,
+ "n_cases": 3,
+ "worst_diffs": {
+  "analytic_checks": 7.807164862288596e-05,
+  "weighted_sensitivities": 4.880177546813804e-15,
+  "bucket_K_S_CR_VR": 4.526878004492893e-15,
+  "margins": 6.103515625e-05,
+  "parameters_derived": 3.608224830031759e-16,
+  "total_im": 4.57763671875e-05,
+  "schedule_im": 4.57763671875e-05,
+  "backtest": 6.061817714453355e-14,
+  "attribution": 5.587935447692871e-09
+ },
+ "cases": [
+  {
+   "case": "base",
+   "passed": true,
+   "issues": [],
+   "n_compared": 360,
+   "compared_by_block": {
+    "analytic_checks": 5,
+    "weighted_sensitivities": 64,
+    "bucket_K_S_CR_VR": 179,
+    "margins": 8,
+    "parameters_derived": 16,
+    "total_im": 1,
+    "schedule_im": 43,
+    "backtest": 28,
+    "attribution": 16
+   },
+   "worst_diffs": {
+    "analytic_checks": 7.807164862056525e-05,
+    "weighted_sensitivities": 4.880177546813804e-15,
+    "bucket_K_S_CR_VR": 2.5840638406203233e-15,
+    "margins": 2.7939677238464355e-09,
+    "parameters_derived": 3.608224830031759e-16,
+    "total_im": 3.725290298461914e-09,
+    "schedule_im": 3.725290298461914e-08,
+    "backtest": 6.061817714453355e-14,
+    "attribution": 5.587935447692871e-09
+   },
+   "workbook_checks": "360/360",
+   "error_cells": 0
+  },
+  {
+   "case": "usd10y_x1.5_params2506_p2pct",
+   "passed": true,
+   "issues": [],
+   "n_compared": 360,
+   "compared_by_block": {
+    "analytic_checks": 5,
+    "weighted_sensitivities": 64,
+    "bucket_K_S_CR_VR": 179,
+    "margins": 8,
+    "parameters_derived": 16,
+    "total_im": 1,
+    "schedule_im": 43,
+    "backtest": 28,
+    "attribution": 16
+   },
+   "worst_diffs": {
+    "analytic_checks": 7.807164862056525e-05,
+    "weighted_sensitivities": 4.880177546813804e-15,
+    "bucket_K_S_CR_VR": 3.775191961149217e-15,
+    "margins": 2.7939677238464355e-09,
+    "parameters_derived": 1.1102230246251565e-16,
+    "total_im": 3.725290298461914e-09,
+    "schedule_im": 5.21540641784668e-08,
+    "backtest": 5.329070518200751e-15,
+    "attribution": 5.587935447692871e-09
+   },
+   "workbook_checks": "360/360",
+   "error_cells": 0
+  },
+  {
+   "case": "concentration_stress_cr_above_1",
+   "passed": true,
+   "issues": [],
+   "n_compared": 360,
+   "compared_by_block": {
+    "analytic_checks": 5,
+    "weighted_sensitivities": 64,
+    "bucket_K_S_CR_VR": 179,
+    "margins": 8,
+    "parameters_derived": 16,
+    "total_im": 1,
+    "schedule_im": 43,
+    "backtest": 28,
+    "attribution": 16
+   },
+   "worst_diffs": {
+    "analytic_checks": 7.807164862288596e-05,
+    "weighted_sensitivities": 4.880177546813804e-15,
+    "bucket_K_S_CR_VR": 4.526878004492893e-15,
+    "margins": 6.103515625e-05,
+    "parameters_derived": 3.608224830031759e-16,
+    "total_im": 4.57763671875e-05,
+    "schedule_im": 4.57763671875e-05,
+    "backtest": 6.061817714453355e-14,
+    "attribution": 5.587935447692871e-09
+   },
+   "workbook_checks": "360/360",
+   "error_cells": 0
+  }
+ ],
+ "n_formulas": 8996,
+ "sheets": [
+  "README",
+  "Inputs",
+  "Parameters",
+  "Parameters_Reg",
+  "Portfolio",
+  "Sensitivities",
+  "SIMM_Delta",
+  "SIMM_Vega",
+  "SIMM_Curvature",
+  "SIMM_Total",
+  "Schedule_IM",
+  "Backtest",
+  "Attribution",
+  "Checks",
+  "Conclusions",
+  "Python_Ref"
+ ],
+ "n_checks_per_case": 360,
+ "libreoffice": "C:\\Program Files\\LibreOffice\\program\\soffice.exe",
+ "runtime_s": 50.9
+}

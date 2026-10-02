@@ -1,0 +1,58 @@
+Source URL: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-12.xml?part=45 (cross-checked with https://www.ecfr.gov/api/renderer/v1/content/enhanced/2026-09-30/title-12?part=45&appendix=Appendix%20A%20to%20Part%2045)
+Retrieved: 2026-10-02
+Document: 12 CFR Part 45 (OCC), eCFR as of 2026-09-30: 45.8(d), (d)(13), (e), (f)(2)(iii) and Appendix A. sha256 of versioner XML ba19b3669373df5fd8dab45926451d026cb869a2a2d3e1708a0a292be0f0603d
+Note: short excerpts for citation only; dashes normalised to hyphens; page numbers are PDF page numbers unless stated.
+
+
+(d) Quantitative requirements. (1) The covered swap entity's initial margin model must calculate an amount of initial margin that is equal to the potential future exposure of the non-cleared swap, non-cleared security-based swap or netting portfolio of non-cleared swaps or non-cleared security-based swaps covered by an eligible master netting agreement. Potential future exposure is an estimate of the one-tailed 99 percent confidence interval for an increase in the value of the non-cleared swap, non-cleared security-based swap or netting portfolio of non-cleared swaps or non-cleared security-based swaps due to an instantaneous price shock that is equivalent to a movement in all material underlying risk factors, including prices, rates, and spreads, over a holding period equal to the shorter of ten business days or the maturity of the non-cleared swap, non-cleared security-based swap or netting portfolio.
+(2) All data used to calibrate the initial margin model must be based on an equally weighted historical observation period of at least one year and not more than five years and must incorporate a period of significant financial stress for each broad asset class that is appropriate to the non-cleared swaps and non-cleared security-based swaps to which the initial margin model is applied.
+(4) In the case of a non-cleared cross-currency swap, the covered swap entity's initial margin model need not recognize any risks or risk factors associated with the fixed, physically-settled foreign exchange transaction associated with the exchange of principal embedded in the non-cleared cross-currency swap. The initial margin model must recognize all material risks and risk factors associated with all other payments and cash flows that occur during the life of the non-cleared cross-currency swap.
+(13) The covered swap entity must review and, as necessary, revise the data used to calibrate the initial margin model at least annually, and more frequently as market conditions warrant, to ensure that the data incorporate a period of significant financial stress appropriate to the non-cleared swaps and non-cleared security-based swaps to which the initial margin model is applied.
+(e) Periodic review. A covered swap entity must periodically, but no less frequently than annually, review its initial margin model in light of developments in financial markets and modeling technologies, and enhance the initial margin model as appropriate to ensure that the initial margin model continues to meet the requirements for approval in this section.
+(2) The covered swap entity's risk control unit must validate its initial margin model prior to implementation and on an ongoing basis. The covered swap entity's validation process must be independent of the development, implementation, and operation of the initial margin model, or the validation process must be subject to an independent review of its adequacy and effectiveness. The validation process must include:
+(i) An evaluation of the conceptual soundness of (including developmental evidence supporting) the initial margin model;
+(ii) An ongoing monitoring process that includes verification of processes and benchmarking by comparing the covered swap entity's initial margin model outputs (estimation of initial margin) with relevant alternative internal and external data sources or estimation techniques. The benchmark(s) must address the chosen model's limitations. When applicable, the covered swap entity should consider benchmarks that allow for non-normal distributions such as historical and Monte Carlo simulations. When applicable, validation shall include benchmarking against observable margin standards to ensure that the initial margin required is not less than what a derivatives clearing organization or a clearing agency would require for similar cleared transactions; and
+(iii) An outcomes analysis process that includes backtesting the initial margin model. This analysis must recognize and compensate for the challenges inherent in back-testing over periods that do not contain significant financial stress.
+
+Appendix A to Part 45-Standardized Minimum Initial Margin Requirements for Non-cleared Swaps and Non-cleared Security-based Swaps
+Table A-Standardized Minimum Gross Initial Margin Requirements for Non-cleared Swaps and Non-cleared Security-Based Swaps1
+Asset Class 
+Gross initial margin(% of notional exposure) 
+Credit: 0-2 year duration 
+2 
+Credit: 2-5 year duration 
+5 
+Credit: 5+ year duration 
+10 
+Commodity 
+15 
+Equity 
+15 
+Foreign Exchange/Currency 
+6 
+Cross Currency Swaps: 0-2 year duration 
+1 
+Cross-Currency Swaps: 2-5 year duration 
+2 
+Cross-Currency Swaps: 5+ year duration 
+4 
+Interest Rate: 0-2 year duration 
+1 
+Interest Rate: 2-5 year duration 
+2 
+Interest Rate: 5+ year duration 
+4 
+Other 
+15
+ 
+1 The initial margin amount applicable to multiple non-cleared swaps or non-cleared security-based swaps subject to an eligible master netting agreement that is calculated according to Appendix A will be computed as follows:
+ 
+Initial Margin=0.4xGross Initial Margin +0.6x NGRxGross Initial Margin
+ 
+where;
+ 
+Gross Initial Margin = the sum of the product of each non-cleared swap's or non-cleared security-based swap's effective notional amount and the gross initial margin requirement for all non-cleared swaps and non-cleared security-based swaps subject to the eligible master netting agreement;
+ 
+and
+ 
+NGR = the net-to-gross ratio (that is, the ratio of the net current replacement cost to the gross current replacement cost). In calculating NGR, the gross current replacement cost equals the sum of the replacement cost for each non-cleared swap and non-cleared security-based swap subject to the eligible master netting agreement for which the cost is positive. The net current replacement cost equals the total replacement cost for all non-cleared swaps and non-cleared security-based swaps subject to the eligible master netting agreement. In cases where the gross replacement cost is zero, the NGR should be set to 1.0.

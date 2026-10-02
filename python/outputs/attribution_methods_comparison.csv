@@ -1,0 +1,11 @@
+driver,level,shapley,bridge,one_at_a_time,bridge_minus_shapley,one_at_a_time_minus_shapley,data_source
+matured_trades,driver,-691528.2574319559,-914220.831390393,-914220.831390393,-222692.57395843707,-222692.57395843707,synthetic (no market data)
+new_trades,driver,4674897.996201268,4964959.199039229,4576775.402262438,290061.2028379608,-98122.59393883031,synthetic (no market data)
+market_move,driver,-146710.7155916897,-183275.79209106416,-127876.80650354922,-36565.07649937447,18833.90908814047,synthetic (no market data)
+parameter_version,driver,203810.8045820938,173007.2522019446,231657.5775151439,-30803.552380149224,27846.772933050088,synthetic (no market data)
+market_rates,substep,,-498794.23136097006,,,,synthetic (no market data)
+market_fx,substep,,-95144.54973084852,,,,synthetic (no market data)
+market_vol,substep,,410662.98900075443,,,,synthetic (no market data)
+sum_of_drivers,sum,4040469.8277597167,4040469.8277597167,3766335.34188364,0.0,-274134.48587607685,synthetic (no market data)
+total_dIM,total,4040469.8277597167,4040469.8277597167,4040469.8277597167,0.0,0.0,synthetic (no market data)
+residual,residual,0.0,0.0,274134.48587607685,0.0,274134.48587607685,synthetic (no market data)

@@ -1,0 +1,24 @@
+asset_class,maturity_bucket_low_years,maturity_bucket_high_years,rate_pct,source_doc,section,retrieved_on,verification_status
+Credit,0,2,2,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Credit,2,5,5,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Credit,5,inf,10,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Commodity,,,15,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Equity,,,15,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Foreign exchange,,,6,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Interest rate,0,2,1,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Interest rate,2,5,2,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Interest rate,5,inf,4,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Other,,,15,"BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives (April 2020)","Appendix A (PDF page 29, printed page 25), standardised initial margin schedule",2026-10-02,VERIFIED_PRIMARY
+Credit,0,2,2,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Credit,2,5,5,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Credit,5,inf,10,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Commodity,,,15,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Equity,,,15,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Foreign exchange,,,6,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Cross-currency swap,0,2,1,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Cross-currency swap,2,5,2,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Cross-currency swap,5,inf,4,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Interest rate,0,2,1,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Interest rate,2,5,2,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Interest rate,5,inf,4,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY
+Other,,,15,"12 CFR Part 45 (OCC), eCFR as of 2026-09-30","Appendix A to Part 45, Table A (Standardized Minimum Gross Initial Margin Requirements)",2026-10-02,VERIFIED_PRIMARY

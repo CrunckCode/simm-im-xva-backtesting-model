@@ -1,0 +1,9 @@
+cause,signature_score,explained_gap,residual_after_fix,scope_rows,rank
+missing_trade,1.0,319948.2357241642,0.0,10,1
+notional_amendment,0.0,0.0,319948.2357241642,0,2
+parameter_version,0.0,0.0,319948.2357241642,0,3
+fx_vega_implied_vol,0.0,0.0,319948.2357241642,4,4
+no_linear_rebucketing,0.0,0.0,319948.2357241642,15,5
+stale_fx_rate,0.0,0.0,319948.2357241642,44,6
+zero_rate_delta,0.0,0.0,319948.2357241642,73,7
+stale_curve,0.0,0.0,319948.2357241642,96,8

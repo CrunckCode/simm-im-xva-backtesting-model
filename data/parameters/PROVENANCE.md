@@ -1,0 +1,57 @@
+# Parameter provenance (retrieved 2026-10-02)
+
+ISDA PDFs are NOT stored in this repository and no ISDA prose is reproduced. Only numeric parameters, short citations (section, paragraph, table, PDF page) and sha256 hashes are kept. ISDA SIMM is a trademark; these files support a SIMM-style educational model that is not ISDA-licensed, not certified, and makes no compliance claim. Public-domain regulatory excerpts (BCBS/BIS, eCFR, EU) are in `docs/sources/`.
+
+## Sources
+
+| # | Source | URL | sha256 of retrieved file | Version, date | Transcribed | How verified |
+|-|-|-|-|-|-|-|
+| 1 | ISDA SIMM Methodology v2.8+2512 (public PDF, 30 pages) | https://www.isda.org/a/hhkiE/ISDA-SIMM_v2.82512_PUBLIC.pdf | 8484d3de7dcb5280b6ad6458d051c50f8ccc3370bc279ae1c47a7bccb8064636 | v2.8+2512 (based on v2.8+2512.2, 13 May 2026), effective 11 Jul 2026 | RatesFX parameters, `simm_parameters.csv`, param_set `2.8+2512` (342 rows) | PyMuPDF and markitdown token sequences compared programmatically per table (all equal; FX vega concentration table equal as a multiset because markitdown reorders one row), then every table page rendered and read by eye |
+| 2 | ISDA SIMM Methodology v2.8+2506 (public PDF, 30 pages) | https://www.isda.org/a/f2RgE/ISDA-SIMM_v2.82506_PUBLIC.pdf | 6d39aa13282428baffc684274d8b4d921933d9913ae640a6ed2e0280b18e47cf | v2.8+2506 (based on v2.8+2506.1, 14 Oct 2025), effective 6 Dec 2025 | same parameters, param_set `2.8+2506` (343 rows) | same method; a line diff of the two extracted texts confirmed that the only in-scope changes are those tested in `test_parameters.py` |
+| 3 | BCBS-IOSCO, Margin requirements for non-centrally cleared derivatives | https://www.bis.org/publications/202004-standards-margin-requirements-non-centrally-cleared-derivatives.pdf | 3ba9da23ae55c5dc4ad482e06eb084ae9c9cae7400a83f5778e986dae490ece6 | April 2020 | Appendix A schedule (10 rows); Requirements 1.2, 3.1, 3.6 constants | two extractors agree; Appendix A page image read |
+| 4 | 12 CFR Part 45 (OCC), eCFR | https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-12.xml?part=45 (cross-check: https://www.ecfr.gov/api/renderer/v1/content/enhanced/2026-09-30/title-12?part=45&appendix=Appendix%20A%20to%20Part%2045) | ba19b3669373df5fd8dab45926451d026cb869a2a2d3e1708a0a292be0f0603d (versioner XML) | as of 2026-09-30 | Appendix A Table A (13 rows incl. cross-currency swaps), footnote 1 (NGR), 45.8(d)(1),(2),(4),(13), (e), (f)(2)(iii) | versioner XML and renderer API texts agree |
+| 5 | BCBS 22, Supervisory framework for the use of backtesting in conjunction with the internal models approach | https://www.bis.org/publications/199601-standards-supervisory-framework-use-backtesting-conjunction-internal-models-approach-market-risk-capital.pdf (landing page https://www.bis.org/publ/bcbs22.pdf is HTML, not the PDF) | e3dd0e08100ad19dd88f0305cf25c0af5384b5272f2e72aa9c10daa79fd73f28 | January 1996 | Table 2 (PDF page 15): zones, plus factors, cumulative probabilities; Section II and III(c) text | two extractors agree; page image read; document cumulative probabilities recomputed with scipy.stats.binom(250, 0.01) and equal to 2 decimal places for all 11 rows |
+| 6 | Commission Delegated Regulation (EU) 2016/2251 | https://publications.europa.eu/resource/celex/32016R2251.ENG with header `Accept: application/xhtml+xml` (the URL without `.ENG` returns an error) | 6c153382f2c2a9fe8ab792ee1097000b5fc8fddc9202262bf0501c6a8e712d0d (XHTML as served; the generator header says converter 9.16.1, 2024-12-21) | OJ L 340, 15.12.2016, as originally published | Art 14(3)-(6), 15, 16 constants | text read; single source file |
+
+## Files and row counts
+
+| File | Rows | Notes |
+|-|-|-|
+| `simm_parameters.csv` | 685 (342 for 2.8+2512, 343 for 2.8+2506) | long format, columns as in INTERFACES.md; every row VERIFIED_PRIMARY |
+| `schedule_im.csv` | 23 | 10 BCBS-IOSCO rows, 13 12 CFR 45 rows (3 cross-currency rows); `inf` marks the open 5+ year bucket; empty bucket columns mean the rate is not duration-based |
+| `bcbs22_traffic_light.csv` | 11 | exceptions 0..9 and "10 or more"; scipy cumulative probability column added |
+| `regulatory_constants.csv` | 33 | one row per constant and jurisdiction, each with citation |
+
+Units: correlations and gamma/phi/psi are stored as fractions (0.74 is 74%). IR risk weights multiply the per-1bp sensitivity; FX risk weights multiply the per-1% sensitivity (the document's numbers, unchanged). Concentration thresholds are USD mm per bp (IR delta), per 1% (FX delta) or USD mm (vega). Diagonals of the IR tenor matrix and psi are blank in the document and stored as 1 (marked in verification_method).
+
+## Structure of the SIMM parameters (what the engine author needs)
+
+- **FX delta risk weight (both versions):** a 2 by 2 table (para 69). Row is the FX volatility group of the given currency, column is the group of the calculation currency. For calculation currency USD (regular group): regular currency 7.4 (2512) or 7.1 (2506); high-vol currency 31.7 (2512) or 18.0 (2506). 2512 stores 7.4, 31.7, 31.7, 31.7 (three of four cells equal). 2506 stores 7.1, 18.0, 18.0, 30.6 (three distinct values; 30.6 applies only when both the currency and the calculation currency are high-vol). The "three values" in 2506 are one table, not a third group.
+- **FX vega sigma (para 10(b)):** sigma = RW * sqrt(365/14) / Phi^-1(99%). For a currency pair the RW is the same FX table entry with row = group of the first currency and column = group of the second currency (for EUR/USD with USD calculation currency this is regular/regular: 7.4 or 7.1). VR uses HVR_FX (0.67 or 0.68); VRW_FX is 0.33 or 0.34; vol and curvature factors are correlated at 0.50 (para 73).
+- **FX correlation (para 72):** two 2 by 2 tables by calculation-currency group; entries are correlations between two distinct FX factors, so the diagonal is not 1 (high/high is 3% or 8% for a regular calculation currency). As raw 2 by 2 matrices they are not positive semidefinite for the high calculation currency table (min eigenvalue -0.003 for 2512, -0.002 for 2506); the factor-level matrix (unit diagonal, table value for every pair of distinct factors) is PSD for any mix of up to 6 regular and 6 high factors, which is what the test checks.
+- **IR vega (para 10):** sigma_kj is the market implied ATM swaption volatility (normal or lognormal, chosen consistently with the vega definition), not a risk-weight formula. VR_k = VRW * sum(VR_ik) * VCR_b with VCR_b = max(1, sqrt(|sum VR_ik| / VT_b)); HVR_IR is NOT used in the IR vega aggregation (the VR formula applies HVR only to equity, commodity and FX). There is no separate IR vega expiry correlation table or formula: K_b uses the same 12 by 12 tenor matrix (para 36, "risk exposures"), with f_kl = 1 for interest rates; inflation vol vs IR vol is 42%; cross-currency aggregation uses gamma = 35% with g_bc = min(VCR_b, VCR_c) / max(VCR_b, VCR_c).
+- **IR delta:** K uses phi (98.1%) between sub-curves of one currency times the tenor correlation; inflation to yield 42%; XCcyBasis to yield or inflation -1%; CR_b = max(1, sqrt(|sum s| / T_b)) per currency; inflation is in the CR sum, cross-currency basis is neither summed nor scaled (para 7(b)). Exponent 1/2 is stored as `concentration_exponent`.
+- **IR currency groups:** risk weight table "regular" lists 14 currencies (USD, EUR, GBP, CHF, AUD, NZD, CAD, SEK, NOK, DKK, HKD, KRW, SGD, TWD); JPY is the only low-vol currency; every other currency (for example MXN) is high-vol. The concentration threshold groups are different: well-traded is USD, EUR, GBP only; less well-traded is AUD, CAD, CHF, DKK, HKD, KRW, NOK, NZD, SEK, SGD, TWD; low is JPY; high is all others. The same IR groups apply to delta and vega thresholds (para 82). Both lists are identical in the two versions.
+- **FX categories (para 80):** Category 1 USD EUR JPY GBP AUD CHF CAD; Category 2 BRL CNY HKD INR KRW MXN NOK NZD RUB SEK SGD TRY ZAR; Category 3 all others. Same in both versions. FX vega thresholds are by the category pair of the two currencies.
+- **Curvature (para 11):** SF(t) = 0.5 * min(1, 14 / t_days) with t in calendar days (12m = 365 days, other tenors pro rata); the document's example table (2w 50.0% ... 10y 0.2%) is stored and the test recomputes it from the formula. theta = min(sum CVR / sum |CVR|, 0), lambda = (Phi^-1(99.5%)^2 - 1)(1 + theta) - theta. K_b uses rho^2, aggregation across buckets uses gamma^2, no g_bc. Only the IR curvature margin is multiplied by HVR_IR^-2 (HVR_IR 0.74, so about 1.826). The FX curvature correlation is 0.50 (para 73); the IR curvature correlations are the squared entries of the tenor matrix.
+- **psi (para 88):** all 30 off-diagonal entries are stored for both versions. IR-FX is 15% (2512) and 10% (2506). The full 6 by 6 matrices are positive semidefinite (min eigenvalue 0.331 for 2512, 0.317 for 2506). Min eigenvalue of the IR tenor matrix is 0.005015 in both versions (the matrix is identical in 2512 and 2506).
+- **Annex L:** notional add-ons and multiplicative scales are not RatesFX parameters in the tables; only the default and minimum scale 1.0 is stored (`multiplicative_scale_default`).
+
+## Discrepancies and clarifications against the planner's values
+
+All headline values listed by the planner reproduce exactly in both versions. Items to note:
+
+1. 2506 high-vol FX list is ARS, EGP, ETB, GHS, LBP, NGN, RUB, SCR, VES, ZMW (10 currencies). It does not contain ISK; ISK is a 2512 addition. 2512 dropped RUB and VES.
+2. Regulatory log row 6 cites 12 CFR 45.8(f)(3)(ii)-(iii) for backtesting; in the 2026-09-30 eCFR text the paragraph is 45.8(f)(2)(ii)-(iii).
+3. 12 CFR 45.8 has no "at least every 3 months" backtesting frequency. That requirement is EU 2016/2251 Art 14(3) only (stored under EU; the US row is `NOT_SPECIFIED`).
+4. The 25% stress share (Art 16(2)-(3)) and the 3 to 5 year calibration window (Art 16(1)) are EU rules. The US rule (45.8(d)(2)) is 1 to 5 years with a stress period but no percentage; BCBS-IOSCO 3.1 gives only a 5 year maximum and equal weighting. Constants are stored per jurisdiction.
+5. BCBS-IOSCO Appendix A has no cross-currency swap rows. The cross-currency rows (1/2/4%) are in 12 CFR 45 Appendix A (BCBS-IOSCO para 1.2 says the interest-rate portion may be used).
+6. The planner's cumulative probabilities hold: cdf(4) = 0.8922, cdf(5) = 0.9588, cdf(9) = 0.99975, cdf(10) = 0.99995 (0.999946 rounds to 0.99995 at 5 decimals); the document prints 99.97% and 99.99% for 9 and 10.
+
+## UNVERIFIED or not checked
+
+- ISDA SIMM sections for credit, equity and commodity risk classes (out of scope, not transcribed except the psi entries).
+- No ISDA text states an IR vega expiry correlation separately; the choice above (reuse of the para 36 matrix) follows para 10(e) and the para 36 wording. If ISDA's separate technical documentation (not downloaded) says otherwise this must be revisited. The SIMM engine author should treat it as read from the methodology text, not from the ISDA calculator.
+- EU 2016/2251 consolidated amendments were not checked (original publication only). 12 CFR 237.8, 12 CFR 349.8 and CFTC 23.154 were not fetched.
+- The single EU XHTML file hash may change if the Publications Office regenerates it; the text of Articles 14 to 16 should be re-read if the hash differs.
+- The eCFR date 2026-09-30 is the date in the API request path; the service returned the current part text.

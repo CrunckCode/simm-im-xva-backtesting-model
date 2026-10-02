@@ -1,0 +1,10 @@
+scenario,seeded_cause,rank_of_seeded_cause,seeded_ranks,im_a,im_b,gap,top_ranked_cause,residual_after_top_fix,accepted,data_source
+D1,missing_trade,1,1,5264394.377556863,5040220.203492831,-224174.1740640318,missing_trade,0.0,True,synthetic (no market data)
+D2,notional_amendment,1,1,5264394.377556863,5269689.287990153,5294.910433289595,notional_amendment,0.0,True,synthetic (no market data)
+D3,zero_rate_delta,1,1,5264394.377556863,5275981.0808869675,11586.70333010424,zero_rate_delta,0.0,True,synthetic (no market data)
+D4,fx_vega_implied_vol,1,1,5264394.377556863,5109600.897243391,-154793.48031347245,fx_vega_implied_vol,0.0,True,synthetic (no market data)
+D5,stale_fx_rate,1,1,5264394.377556863,5249408.025216378,-14986.35234048497,stale_fx_rate,0.0,True,synthetic (no market data)
+D6,no_linear_rebucketing,1,1,5264394.377556863,5244839.844228016,-19554.53332884703,no_linear_rebucketing,0.0,True,synthetic (no market data)
+D7,stale_curve,1,1,5264394.377556863,5266019.824644838,1625.447087975219,stale_curve,0.0,True,synthetic (no market data)
+D8,parameter_version,1,1,5264394.377556863,5029888.435878644,-234505.94167821947,parameter_version,0.0,True,synthetic (no market data)
+D9,missing_trade+stale_fx_rate,3,1+3,5264394.377556863,5036439.61946603,-227954.7580908332,missing_trade,9039.943688559346,True,synthetic (no market data)
